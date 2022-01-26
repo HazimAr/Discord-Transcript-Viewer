@@ -1,6 +1,3 @@
-// google analytics measurement id
-const GA_TRACKING_ID = "";
-
 type MetaType = {
 	title: string;
 	lang: string;
@@ -20,4 +17,4 @@ const META: MetaType = {
 	tags: ["nextjs", "typescript", "chakraui", "google analytics", "eslint", "jest", "styled components", "icons"]
 };
 
-export { GA_TRACKING_ID, META };
+export { META };
