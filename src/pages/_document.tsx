@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-import { GA_TRACKING_ID, META } from "config";
+import { META } from "config";
 
 export default class MyDocument extends Document {
 	render() {
@@ -31,24 +31,6 @@ export default class MyDocument extends Document {
 						content={META.description}
 					/>
 					<meta name="twitter:image" content={META.image} />
-
-					<script
-						async
-						src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-					/>
-					<script
-						// eslint-disable-next-line react/no-danger
-						dangerouslySetInnerHTML={{
-							__html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-						}}
-					/>
 				</Head>
 				<body>
 					<Main />
