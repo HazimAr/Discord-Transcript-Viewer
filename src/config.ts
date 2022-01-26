@@ -8,11 +8,11 @@ type MetaType = {
 };
 
 const META: MetaType = {
-	title: "NextJS ChakraUI Template | Hazim Arafa",
+	title: "Programming Simplified Transcript Viewer",
 	lang: "en-us",
 	description:
-		"Boilerplate built to scale containing Typescript + NextJS + ChakraUI + Google Analytics + ESLint + Jest + Styled Components + Icons",
-	url: "https://boilerplate.hazimarafa.tech",
+		"",
+	url: "https://transcripts.programmingsimplified.org",
 	image: "/logo.png",
 	tags: ["nextjs", "typescript", "chakraui", "google analytics", "eslint", "jest", "styled components", "icons"]
 };

@@ -10,6 +10,7 @@ export default class MyDocument extends Document {
 					<meta name="description" content={META.description} />
 					<meta name="author" content="https://webdefy.tech" />
 					<meta name="keywords" content={META.tags.join(",")} />
+					<meta name="robots" content="noindex" />
 
 					<meta itemProp="name" content={META.title} />
 					<meta itemProp="description" content={META.description} />
