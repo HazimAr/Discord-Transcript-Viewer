@@ -23,7 +23,7 @@ export async function getServerSideProps({
 		})
 	// @ts-ignore
 	).results[0].code.text;
-	console.log(textArray);
+
 	return {
 		props: {
 			transcriptHtml: textArray
