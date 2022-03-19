@@ -17,13 +17,15 @@ export default function Home({ transcriptHtml }) {
 export async function getServerSideProps({
 	params,
 }: GetServerSidePropsContext) {
-	const textArray = (
+	const textArray = 
+	(
 		await notion.blocks.children.list({
 			block_id: params.transcriptId as string,
 		})
 	// @ts-ignore
-	).results[0].code.text;
+	).results[0].code.rich_text;
 
+	console.log(textArray);
 	return {
 		props: {
 			transcriptHtml: textArray
