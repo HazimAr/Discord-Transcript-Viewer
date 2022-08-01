@@ -24,7 +24,7 @@
 		"@chakra-ui/icons": "^2.0.2",
 		"@chakra-ui/react": "^1.8.8",
 		"@emotion/react": "^11.9.0",
-		"@emotion/styled": "^11.8.1",
+		"@emotion/styled": "^11.10.0",
 		"@notionhq/client": "^1.0.4",
 		"framer-motion": "^6.3.14",
 		"next": "^12.1.6",
